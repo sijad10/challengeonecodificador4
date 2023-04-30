@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  </head>
+  <body>    
+    <main>
+      <section id="panel1" class="principal">
+        <div id="entrada">
+          <textarea id="input" placeholder="Ingrese el texto aqui"></textarea>
+        </div>
+        <p id="aviso">❗Solo letras minusculas y sin acentos</p><br>
+        <button id="encripta" onclick="encripta()">Encriptar</button>
+        <button id="desencripta" onclick="desencripta()">Desencriptar</button>
+      </section>
+
+      <section id="panel2" class="principal">
+        <div id="respuesta"></div>
+        <div id="output">
+          <div id="mostrar">
+            <canvas id="miCanvas" width="400" height="350"></canvas>
+            <h1>Ningun mensaje fue encontrado</h1><br>
+            <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+          </div>
+        </div> 
+        <button id="copia" onclick="copiar()">Copiar</button>
+      </section>         
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
